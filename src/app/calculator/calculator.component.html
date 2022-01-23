@@ -1,0 +1,223 @@
+<div class="container">
+    <div class="row"
+         style="height: 50px;">
+        <h1>{{ screen }}</h1>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row"
+         style="height: 50px;">
+        <div class="col-sm-2
+                    bg-secondary
+                    text-decoration-none
+                    text-light
+                    border"
+                    style="cursor: pointer;"
+                    (click)="onClickAllClear()"
+                    *ngIf="this.allClear === true">
+            <a>AC</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onClickClear()"
+        *ngIf="this.allClear === false">
+            <a>C</a>
+        </div>
+
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onClickSwapNeg()">
+            <a>+/-</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onClickPercentage()">
+            <a>%</a>
+        </div>
+        <div class="col-sm-2
+        bg-warning
+        text-decoration-none
+        text-dark"
+        style="cursor: pointer;"
+        (click)="onClickOperator('/')">
+            <a>/</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row"
+         style="height: 50px;">
+        <div class="col-sm-2
+                    bg-secondary
+                    text-decoration-none
+                    text-light
+                    border
+                    h-20"
+                    style="cursor: pointer;"
+                    (click)="onNumClick(7)">
+            <a>7</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onNumClick(8)">
+            <a>8</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onNumClick(9)">
+            <a>9</a>
+        </div>
+        <div class="col-sm-2
+        bg-warning
+        text-decoration-none
+        text-dark
+        border"
+        style="cursor: pointer;"
+        (click)="onClickOperator('X')">
+            <a>X</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row"
+         style="height: 50px;">
+        <div class="col-sm-2
+                    bg-secondary
+                    text-decoration-none
+                    text-light
+                    border"
+                    style="cursor: pointer;"
+                    (click)="onNumClick(4)">
+            <a>4</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onNumClick(5)">
+            <a>5</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onNumClick(6)">
+            <a>6</a>
+        </div>
+        <div class="col-sm-2
+        bg-warning
+        text-decoration-none
+        text-dark
+        border"
+        style="cursor: pointer;"
+        (click)="onClickOperator('-')">
+            <a>-</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row"
+         style="height: 50px;">
+        <div class="col-sm-2
+                    bg-secondary
+                    text-decoration-none
+                    text-light
+                    border"
+                    style="cursor: pointer;"
+                    (click)="onNumClick(1)">
+            <a>1</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onNumClick(2)">
+            <a>2</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onNumClick(3)">
+            <a>3</a>
+        </div>
+        <div class="col-sm-2
+        bg-warning
+        text-decoration-none
+        text-dark
+        border"
+        style="cursor: pointer;"
+        (click)="onClickOperator('+')">
+            <a>+</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row"
+         style="height: 50px;">
+        <div class="col-sm-4
+                    bg-secondary
+                    text-decoration-none
+                    text-light
+                    border"
+                    style="cursor: pointer;"
+                    (click)="onNumClick(0)">
+            <a>0</a>
+        </div>
+        <div class="col-sm-2
+        bg-secondary
+        text-decoration-none
+        text-light
+        border"
+        style="cursor: pointer;"
+        (click)="onDecimalClick()">
+            <a>.</a>
+        </div>
+        <div class="col-sm-2
+        bg-warning
+        text-decoration-none
+        text-dark
+        border"
+        style="cursor: pointer;"
+        (click)="onClickCaculate()">
+            <a>=</a>
+        </div>
+    </div>
+</div>
